@@ -17,7 +17,7 @@ public class Owner : Person {
         }
     }
 
-    public void SendMessage(string message, IEnumerable<Employee> employees) {
+    public void SendMessage(string message, List<Employee> employees) {
         send(message, employees);
     }
 
