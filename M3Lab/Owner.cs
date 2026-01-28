@@ -11,7 +11,7 @@ using System.Collections.Generic;
 public class Owner : Person {
     public Owner(string name, int age) : base(name, age, "Owner") { }
 
-    private void send(string message, IEnumerable<Employee> employees) {
+    private void send(string message, List<Employee> employees) {
         foreach (var e in employees) {
             Console.WriteLine($"Owner sends '{message}' to {e.Name}");
         }
